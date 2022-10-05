@@ -1,0 +1,15 @@
+config {
+  type: "view", // Creates a view in BigQuery. Try changing to "table" instead.
+  columns: {
+    ussa: "ussa number",
+    category: "age group",
+    gender: "gender",
+    club: "mountain",
+    race: "race name",
+    rank: "rank",
+    points: "num points"
+  }
+}
+
+SELECT * 
+FROM `bq-jake.CYSL_raw.season_results_2022`
